@@ -1,7 +1,9 @@
-# How to create a new public remote repository?
+# Github Workflow
+
+## 1. How to create a new public remote repository?
 
 `gh repo create "name_of_the_project" --public --source=.`
 
-# How to create a new private remote repository?
+## 2. How to create a new private remote repository?
 
 `gh repo create "name_of_the_project" --private --source=.`
