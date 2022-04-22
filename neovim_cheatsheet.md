@@ -1,4 +1,42 @@
-# Exiting
+# Custom keybindings
+
+## Project
+
+| Command | Description                      |
+| ------- | -------------------------------- |
+| `<C-p>` | Toggle the Projects in Telescope |
+
+## NvimTree
+
+| Command     | Description                         |
+| ----------- | ----------------------------------- |
+| `<C-n>`     | Toggle the NvimTree File Explorer   |
+| `<leader>n` | Find file in NvimTree File Explorer |
+
+## Telescope
+
+| Command      | Description               |
+| ------------ | ------------------------- |
+| `<leader>ff` | Find files in Telescope   |
+| `<leader>fg` | Live grep in Telescope    |
+| `<leader>fb` | Find buffers in Telescope |
+| `<leader>fh` | Find help in Telescope    |
+
+## Terminal
+
+| Command | Description               |
+| ------- | ------------------------- |
+| `<A-t>` | Toggle the Fterm terminal |
+
+## Markdown
+
+| Command      | Description                        |
+| ------------ | ---------------------------------- |
+| `<leader>md` | Launch the Markdown preview window |
+
+# General keybindings
+
+## Exiting
 
 | Command    | Description                      |
 | ---------- | -------------------------------- |
@@ -11,7 +49,7 @@
 | `ZZ`       | Save and quit                    |
 | `ZQ`       | Quit without checking changes    |
 
-# Editing
+## Editing
 
 | Command | Description                         |
 | ------- | ----------------------------------- |
@@ -28,14 +66,14 @@
 | `u`     | Undo changes                        |
 | `<C-R>` | Redo changes                        |
 
-# Exiting insert mode
+## Exiting insert mode
 
 | Command        | Description                                 |
 | -------------- | ------------------------------------------- |
 | `Esc or <C-[>` | Exit insert mode                            |
 | `<C-C>`        | Exit insert mode, and abort current command |
 
-# Visual mode
+## Visual mode
 
 | Command | Description             |
 | ------- | ----------------------- |
@@ -43,7 +81,7 @@
 | `V`     | Enter visual line mode  |
 | `<C-V>` | Enter visual block mode |
 
-## In visual mode
+### In visual mode
 
 | Command  | Description           |
 | -------- | --------------------- |
@@ -51,7 +89,7 @@
 | `s`      | Replace selection     |
 | `y`      | Yank selection (Copy) |
 
-# Navigating
+## Navigating
 
 | Command | Description    |
 | ------- | -------------- |
@@ -62,7 +100,7 @@
 | `<C-U>` | Half-page up   |
 | `<C-D>` | Half-page down |
 
-## Navigating words
+### Navigating words
 
 | Command | Description          |
 | ------- | -------------------- |
@@ -71,7 +109,7 @@
 | `ge`    | Previous end of word |
 | `e`     | Next end of word     |
 
-## Navigating line
+### Navigating line
 
 | Command    | Description                    |
 | ---------- | ------------------------------ |
@@ -79,14 +117,14 @@
 | `^`        | Start of line after whitespace |
 | `$`        | End of line                    |
 
-## Navigating character
+### Navigating character
 
 | Command | Description                |
 | ------- | -------------------------- |
 | `fc`    | Go forward to character c  |
 | `Fc`    | Go backward to character C |
 
-## Navigating document
+### Navigating document
 
 | Command | Description  |
 | ------- | ------------ |
@@ -95,7 +133,7 @@
 | `:n`    | Go to line n |
 | `nG`    | Go to line n |
 
-## Navigation of the cursor inside a window
+### Navigation of the cursor inside a window
 
 > Todo: this needs to be described differently. This is very useful.
 
@@ -108,7 +146,7 @@
 | `M`     | Move to middle of the screen **Doesn't seem to work**        |
 | `L`     | Move to bottom of the screen **Doesn't seem to work either** |
 
-## Navigation of search
+### Navigation of search
 
 | Command | Description                          |
 | ------- | ------------------------------------ |
@@ -117,7 +155,7 @@
 | `*`     | Next whole word under the cursor     |
 | `#`     | Previous whole word under the cursor |
 
-## Navigation of tab pages
+### Navigation of tab pages
 
 | Command           | Description                    |
 | ----------------- | ------------------------------ |
@@ -130,9 +168,9 @@
 | `:tabn`           | Go to next tab                 |
 | `:tabp`           | Go to previous tab             |
 
-# Operators
+## Operators
 
-## Usage
+### Usage
 
 Operators let you operate in a range of text (defined by motion). These are performed in normal mode.
 
@@ -140,7 +178,7 @@ Operators let you operate in a range of text (defined by motion). These are perf
 | -------- | ------ |
 | `d`      | `w`    |
 
-### Examples
+#### Examples
 
 Combine operators with motions to use them.
 
@@ -153,7 +191,7 @@ Combine operators with motions to use them.
 | `dip`                | Delete a text object (inside paragraph)     |
 | (in visual mode) `d` | Delete selection                            |
 
-## Operators list
+### Operators list
 
 | Command | Description                                          |
 | ------- | ---------------------------------------------------- |
@@ -168,9 +206,9 @@ Combine operators with motions to use them.
 | `gu`    | Lowercase                                            |
 | `!`     | Filter through external program **check this later** |
 
-# Text objects
+## Text objects
 
-## Usage
+### Usage
 
 Text objects let you operate (with an operator) in or around text blocks (objects).
 
@@ -178,7 +216,7 @@ Text objects let you operate (with an operator) in or around text blocks (object
 | -------- | -------------------- | ----------- |
 | `v`      | `i`                  | `p`         |
 
-### Examples
+#### Examples
 
 | Command     | Description                        |
 | ----------- | ---------------------------------- |
@@ -189,7 +227,7 @@ Text objects let you operate (with an operator) in or around text blocks (object
 | `dip`       | Delete inner paragraph             |
 | `cip`       | Change inner paragraph             |
 
-### Text objects
+#### Text objects
 
 | Command   | Description      |
 | --------- | ---------------- |
@@ -202,15 +240,15 @@ Text objects let you operate (with an operator) in or around text blocks (object
 | `B`       | A block `[{`     |
 | `t`       | An XML tag block |
 
-### Diff
+#### Diff
 
 | Command                        | Description                           |
 | ------------------------------ | ------------------------------------- |
 | `gvimdiff file1 file2 [file3]` | See differences between files, in HMI |
 
-# Misc
+## Misc
 
-## Folds
+### Folds
 
 | Command      | Description               |
 | ------------ | ------------------------- |
@@ -226,13 +264,13 @@ Text objects let you operate (with an operator) in or around text blocks (object
 
 Uppercase ones are recursive (zO means open recursively).
 
-## Windows
+### Windows
 
 | Command         | Description                        |
 | --------------- | ---------------------------------- |
 | `z{height}<Cr>` | Resize pane to {height} lines tall |
 
-## Tags
+### Tags
 
 | Command              | Description                                     |
 | -------------------- | ----------------------------------------------- |
@@ -244,7 +282,7 @@ Uppercase ones are recursive (zO means open recursively).
 | `:tselect Classname` | Find definitions of Classname                   |
 | `:tjump Classname`   | Find definitions of Classname (auto-select 1st) |
 
-## Useful to know
+### Useful to know
 
 | Command        | Description                                       |
 | -------------- | ------------------------------------------------- |
@@ -252,7 +290,7 @@ Uppercase ones are recursive (zO means open recursively).
 | `]p`           | Paste under the current indentation level         |
 | `:set ff=unix` | Convert Windows line endings to Unix line endings |
 
-## Command line
+### Command line
 
 | Command      | Description                               |
 | ------------ | ----------------------------------------- |
@@ -260,18 +298,18 @@ Uppercase ones are recursive (zO means open recursively).
 | `<C-R>"`     | Paste from " register                     |
 | `<C-X><C-F>` | Auto-completion of path in insert mode    |
 
-## Text alignment
+### Text alignment
 
 `:center [width]` \
 `:right [width]` \
 `:left`
 
-## Exiting with an error
+### Exiting with an error
 
 `:cq` \
 `:cquit`
 
-## Navigation
+### Navigation
 
 | Command    | Description             |
 | ---------- | ----------------------- |
@@ -281,7 +319,7 @@ Uppercase ones are recursive (zO means open recursively).
 | `[m`       | Previous method start   |
 | `[M`       | Previous method end     |
 
-## Jumping
+### Jumping
 
 | Command | Description                  |
 | ------- | ---------------------------- |
@@ -289,14 +327,14 @@ Uppercase ones are recursive (zO means open recursively).
 | `<C-I>` | Go forward                   |
 | `gf`    | Go to file in cursor         |
 
-## Counters
+### Counters
 
 | Command | Description      |
 | ------- | ---------------- |
 | `<C-A>` | Increment number |
 | `<C-X>  | Decrement number |
 
-## Case
+### Case
 
 | Command | Description                        |
 | ------- | ---------------------------------- |
@@ -308,7 +346,7 @@ Uppercase ones are recursive (zO means open recursively).
 
 This works in visual and normal modes.
 
-## Marks
+### Marks
 
 | Command     | Description                                          |
 | ----------- | ---------------------------------------------------- |
@@ -334,7 +372,7 @@ This works in visual and normal modes.
 | `:delm a-d` | Delete marks a, b, c, d                              |
 | `:delm abc` | Delete marks a, b, c                                 |
 
-## Spell checking
+### Spell checking
 
 | Command                      | Description                                                 |
 | ---------------------------- | ----------------------------------------------------------- |
