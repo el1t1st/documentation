@@ -1,9 +1,13 @@
 # Github Workflow
 
-## 1. How to create a new public remote repository?
+## How to login into github from the command line?
+
+`gh auth login`
+
+## How to create a new public remote repository?
 
 `gh repo create "name_of_the_project" --public --source=.`
 
-## 2. How to create a new private remote repository?
+## How to create a new private remote repository?
 
 `gh repo create "name_of_the_project" --private --source=.`
