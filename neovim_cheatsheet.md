@@ -2,9 +2,9 @@
 
 ## Project
 
-| Command | Description                      |
-| ------- | -------------------------------- |
-| `<C-p>` | Toggle the Projects in Telescope |
+| Command | Description                         |
+| ------- | ----------------------------------- |
+| `<C-p>` | Open up Projects panel in Telescope |
 
 ## NvimTree
 
@@ -36,18 +36,26 @@
 
 # General keybindings
 
+## Working with split screens
+
+| Command           | Description                                                 |
+| ----------------- | ----------------------------------------------------------- |
+| `:vs` or `<C-w>v` | Open up a new screen next to the current (horizontal split) |
+| `:sp` or `<C-w>s` | Open up a window above the current (vertical split)         |
+| `<C-w> h j k l`   | Navigate among the split screens                            |
+
 ## Exiting
 
-| Command    | Description                      |
-| ---------- | -------------------------------- |
-| `:qa`      | Close all files                  |
-| `:qa!`     | Close all files, abandon changes |
-| `:w`       | Save                             |
-| `:wq / :x` | Save and close file              |
-| `:q`       | Close file                       |
-| `:q!`      | Close file, abandon changes      |
-| `ZZ`       | Save and quit                    |
-| `ZQ`       | Quit without checking changes    |
+| Command         | Description                      |
+| --------------- | -------------------------------- |
+| `:qa`           | Close all files                  |
+| `:qa!`          | Close all files, abandon changes |
+| `:w` or `<C-s>` | Save                             |
+| `:wq / :x`      | Save and close file              |
+| `:q`            | Close file                       |
+| `:q!`           | Close file, abandon changes      |
+| `ZZ`            | Save and quit                    |
+| `ZQ`            | Quit without checking changes    |
 
 ## Editing
 
