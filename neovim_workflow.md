@@ -21,3 +21,27 @@
 2. `yy` to copy
 3. Move curson to where you want to paste
 4. `p` to paste
+
+## How to open a file in a vertical window next to the current opened file?
+
+1. `<C-n>` to open the Nerdtree Explorer
+2. Use h j k l to navigate to the file you want to open
+3. `<C-v>` to open the file in vertical split
+
+> To move from one window to the other use `<C-w> h l
+
+## How to navigate between split windows?
+
+`<C-w> h j k l`
+
+## What is a faster way to save the contents of a file instead of `:w`?
+
+`<C-s>`
+
+## What is a faster way to save the changes and quit?
+
+`ZZ`
+
+## How can you move you cursor to the middle of the window?
+
+`zz`
