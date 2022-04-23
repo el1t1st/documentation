@@ -1,3 +1,5 @@
+# Neovim Patters and Workflows
+
 <!-- vim-markdown-toc GFM -->
 
 - [How to search and replace a text in a file?](#how-to-search-and-replace-a-text-in-a-file)
