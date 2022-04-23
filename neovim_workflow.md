@@ -1,4 +1,4 @@
-# Neovim Patters and Workflows
+# Neovim Patterns and Workflows
 
 <!-- vim-markdown-toc GFM -->
 
