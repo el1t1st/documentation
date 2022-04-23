@@ -1,3 +1,16 @@
+<!-- vim-markdown-toc GFM -->
+
+- [How to search and replace a text in a file?](#how-to-search-and-replace-a-text-in-a-file)
+- [How to copy paste a block in Visual Mode?](#how-to-copy-paste-a-block-in-visual-mode)
+- [How to copy paste a line in Normal Mode?](#how-to-copy-paste-a-line-in-normal-mode)
+- [How to open a file in a vertical window next to the current opened file?](#how-to-open-a-file-in-a-vertical-window-next-to-the-current-opened-file)
+- [How to navigate between split windows?](#how-to-navigate-between-split-windows)
+- [What is a faster way to save the contents of a file instead of `:w`?](#what-is-a-faster-way-to-save-the-contents-of-a-file-instead-of-w)
+- [What is a faster way to save the changes and quit?](#what-is-a-faster-way-to-save-the-changes-and-quit)
+- [How can you move you cursor to the middle of the window?](#how-can-you-move-you-cursor-to-the-middle-of-the-window)
+
+<!-- vim-markdown-toc -->
+
 ## How to search and replace a text in a file?
 
 `:%s/text that needs to be changed/new text/g`
